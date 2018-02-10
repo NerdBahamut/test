@@ -1,0 +1,151 @@
+html {
+	margin: 0;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	direction: ltr;
+	font-family:tahoma, arial, verdana, sans-serif, Lucida Sans;
+	line-height: 1.182;
+	font-weight: normal;
+	font-size: 12pt;
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 100%;
+	background: #fff;
+}
+
+header, footer {
+	display: block;
+}
+.w_1024 {
+	max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 1;
+}
+.header .w_1024 {
+    background: #999;
+}
+.nav_head {
+	float: left;
+	margin: 7px 0 0 10px;
+}
+.nav_head ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav_head ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.nav_head ul li {
+	float: left;
+}
+.nav_head ul a {
+	color: #fff;
+	display: block;
+	margin-right: 10px;
+}
+.nav_head ul a:hover {
+	text-decoration: none;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: auto;
+    min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 0 auto;
+	box-sizing: border-box;
+	padding: 50px 10px 30px;
+	background: #cfe2f3;
+    min-height: 2000px;
+}
+
+.page_description {
+	height: 100px;
+	background: green;
+}
+
+.sticky_block {
+	width: 200px;
+	background: #000;
+	float: right;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 10px 0 0;
+}
+.sticky {
+	position: fixed;
+	z-index: 101;
+}
+.stop {
+	position: relative;
+	z-index: 101;
+}
+
+.left_aside {
+	width: 300px;
+	background: #efefef;
+	height: 300px;
+	position: absolute;
+	top: 40px;
+	left: -300px;
+	z-index: 1;
+	opacity: 0;
+	transition: all .2s ease;
+}
+.left_aside.active {
+	left: 0;
+	opacity: 1;
+}
+
+.right_aside {
+	width: 300px;
+	background: #efefef;
+	height: 500px;
+	position: absolute;
+	top: 40px;
+	right: -300px;
+	z-index: 1;
+	opacity: 0;
+	transition: all .2s ease;
+}
+.right_aside.active {
+	right: 0;
+	opacity: 1;
+}
+
+.footer {
+	height: 30px;
+	margin-top: -30px;
+	flex: 0 0 auto;
+    background: #999;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1366px) {}
+
+
+
+
+
+
